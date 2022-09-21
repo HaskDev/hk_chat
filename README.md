@@ -3,4 +3,4 @@ Fivem Chat Desging Created By Hask#5283
 
 Preview: 
 
-https://cdn.discordapp.com/attachments/970447872732573737/1022159419804504094/Captura_de_pantalla_2022-09-21_165446.png
+![image](https://user-images.githubusercontent.com/100434787/191613487-5527d9b3-0a3c-4514-be40-6c970dcbb4a9.png)
