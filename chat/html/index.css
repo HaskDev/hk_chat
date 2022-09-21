@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+.color-0{color: #ffffff;}
+.color-1{color: #ff4444;}
+.color-2{color: #99cc00;}
+.color-3{color: #ffbb33;}
+.color-4{color: #0099cc;}
+.color-5{color: #33b5e5;}
+.color-6{color: #aa66cc;}
+.color-8{color: #cc0000;}
+.color-9{color: #cc0068;}
+
+* {
+  font-family: 'Nunito', sans-serif;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 2100px) {
+  * {
+    font-size: 1.05rem;
+  }
+}
+@font-face {
+	font-family: gothan;
+	src: url('https://images.forasterosroleplay.es/fonts/fonts33.otf');
+}
+
+
+em {
+  font-style: medium;
+}
+
+#app {
+  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
+}
+
+.chat-window {
+  position: absolute;
+  top: 1.5%;
+  left: 0.8%;
+  width: 30%;
+  height: 29%;
+  max-width: 1000px;
+  border-radius: 5px; 
+  -webkit-animation-duration: 2s;
+}
+
+.messagebox{
+  /*border-radius: 5px; */
+  padding: 0px;
+  margin-bottom: 0px;
+  width: fit-content;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-name: fadeInBottom;
+}
+
+.message {
+  margin-left: 5px;
+  color: white;
+
+}
+
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes fadeInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to { opacity: 1 }
+}
+
+
+.chat-messages {
+  /* font-weight: bold; */
+  position: relative;
+  height: 95%;
+  font-size: 1rem;
+  margin: 0.2%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+
+.chat-input {
+  /* font-weight: bold; */
+  font-size: 1rem;
+  position: absolute;
+  border-radius: 5px; 
+  top: 30%;
+  left: 0.8%;
+  width: 38%;
+  max-width: 1000px;
+  box-sizing: border-box;
+}
+
+.prefix {
+  font-weight: bold;
+  font-size: 1rem;
+  position: absolute;
+  margin-top: 0.9%;
+  color: rgb(223, 141, 0);
+  left: 1%;
+  overflow: hidden;
+}
+
+textarea {
+  font-family: 'Muli', sans-serif;
+  font-size: 1rem;
+  display: block;
+  box-sizing: border-box;
+  padding: 1%;
+  padding-left: 3.5%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.706);
+  border: 0.5px solid rgba(255, 255, 255, 0);
+  border-radius: 3px; 
+  width: 78%;
+  border-width: 1;
+  height: 3.15%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+textarea:focus, input:focus {
+    outline: none;
+}
+
+.msg {
+  margin-bottom: .18vw;
+}
+
+.multiline {
+  white-space: pre-line;
+}
+
+.suggestions {
+  list-style-type: none;
+  padding: 0.5%;
+  padding-left: 1.4%;
+  font-size: 1rem;
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: white;
+  background-color: rgba(6, 6, 6, 0.509);
+  width: 100%;
+}
+
+.help {
+  color: #b0bbbd;
+}
+
+.disabled {
+  color: #8d8d8d;
+}
+
+.suggestion {
+  margin-bottom: 0.5%;
+}
+
+.hidden {
+  display: none;
+}
+
+
+.me_box{
+  padding: 1px 8px 5px 8px; 
+  margin-right: 0.40vw;
+  background-color: rgba(0, 0, 0, 0.759); 
+  border-radius: 4px  ;
+  border-bottom: 4px solid rgb(223, 141, 0); 
+  color: rgb(223, 141, 0); 
+  font-weight:bold;
+}
+.me_box > span{
+  color: white;
+  font-weight:normal;
+}
+
+.do_box{ 
+  padding: 1px 8px 5px 8px; 
+  margin-right: 0.40vw; 
+  background-color: rgba(0, 0, 0, 0.759); 
+  border-radius: 4px;
+  border-bottom: 4px solid rgb(0, 0, 0);  
+  color: rgb(255, 255, 255); 
+  font-weight:bold;
+}
+.do_box > span{
+  color: white;
+  font-weight:normal;
+}
+
+.try_box{
+  padding: 1px 8px 5px 8px; 
+  margin-right: 0.40vw; 
+  background-color: rgba(234, 0, 255, 0.5); 
+  border-radius: 5px; 
+  border: rgba(146, 22, 132, 0.747) 2px solid; 
+  color: rgba(146, 22, 132, 0.747); 
+  font-weight:bold;
+}
+.try_box > span{
+  color: white;
+  font-weight:normal;
+}
+
+.ayuda_box{
+  padding: 1px 8px 5px 8px; 
+  margin-right: 0.40vw; 
+  background-color: rgba(255, 230, 0, 0.5); 
+  border-radius: 5px; 
+  border: rgba(255, 251, 0, 0.6) 2px solid; 
+  color: rgb(255, 251, 0); 
+  font-weight:bold;
+}
+.ayuda_box > span{
+  color: white;
+  font-weight:normal;
+}
+
+.rstaff_box{
+  padding: 1px 8px 5px 8px; 
+  margin-right: 0.40vw; 
+  background-color: rgba(31, 0, 54, 0.6); 
+  border-radius: 5px; 
+  border: rgba(167, 69, 237, 0.6) 2px solid; 
+  color: rgb(188, 105, 248); 
+  font-weight:bold;
+}
+
+.rstaff_box > span{
+  color: white;
+  font-weight:normal;
+}
+.oop_box{
+  margin-right: 0.40vw; 
+  border-radius: 5px; 
+  border: rgba(167, 69, 237, 0) 2px solid; 
+  color: rgb(68, 68, 68); 
+  font-weight:bold;  font-weight:normal;
+}
+
+.oop_box > span{
+  color: rgb(255, 255, 255);
+  font-weight:normal;
+}
+
